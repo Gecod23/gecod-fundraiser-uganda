@@ -3,218 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Help Girls’ Empowerment for Community Development build safe toilets for girls at Ayivu. Support girls’ education and menstrual dignity in Uganda."
-    />
+    <meta name="theme-color" content="#eaf7ff" />
+    <meta name="description" content="Help Girls’ Empowerment for Community Development build safe toilets for girls at Ayivu Primary and Secondary Schools in Bidibidi Refugee Settlement, Uganda." />
     <title>GECOD | Build Safe Toilets for Girls at Ayivu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="container nav">
-        <div class="brand">
-          <span class="brand-mark">GECOD</span>
-        </div>
+        <a class="brand" href="#top" aria-label="GECOD home"><span class="brand-mark">GECOD</span><span class="brand-caption">Girls’ Empowerment<br />for Community Development</span></a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="#impact">Impact</a>
-          <a href="#schools">Schools</a>
-          <a href="#donate">Donate</a>
-          <a href="#contact">Contact</a>
+          <a href="#impact">The impact</a><a href="#schools">Why Ayivu</a><a href="#donate">Donate</a><a href="#contact">Contact</a>
         </nav>
         <a class="button button-primary small" href="#donate">Give today</a>
       </div>
     </header>
 
-    <main>
+    <main id="top">
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Girls’ Empowerment for Community Development</p>
-            <h1>Help build safe toilets for girls at Ayivu.</h1>
-            <p class="lede">
-              Girls without a clean, private toilet miss school during their periods,
-              and some drop out. We are raising $10,000 to build two female-friendly
-              latrine blocks in Bidibidi Refugee Settlement, Yumbe District, Uganda.
-            </p>
-
-            <div class="hero-actions">
-              <a class="button button-primary" href="#donate">Donate now</a>
-              <a class="button button-secondary" href="https://wa.me/256787967919?text=Hello%20GECOD%2C%20I%20want%20to%20support%20the%20Ayivu%20girls%20toilet%20project." target="_blank" rel="noreferrer">Pledge on WhatsApp</a>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Girls’ Empowerment for Community Development</p>
+            <h1>Every girl deserves a safe place to learn.</h1>
+            <p class="lede">Help us build safe toilets for girls at Ayivu. Girls without a clean, private toilet may miss school during their periods, and some drop out. GECOD is raising <strong>$10,000</strong> for two female-friendly latrine blocks in Bidibidi Refugee Settlement, Yumbe District, Uganda.</p>
+            <div class="hero-actions"><a class="button button-primary" href="#donate">Donate to the project <span aria-hidden="true">→</span></a><a class="button button-secondary" href="https://wa.me/256787967919?text=Hello%20GECOD%2C%20I%20want%20to%20support%20the%20Ayivu%20girls%20toilet%20project." target="_blank" rel="noopener noreferrer">Ask us on WhatsApp</a></div>
+            <ul class="mini-stats" aria-label="Fundraising summary"><li><strong>$10,000</strong><span>fundraising goal</span></li><li><strong>2</strong><span>school latrine blocks</span></li><li><strong>Ayivu</strong><span>Bidibidi, Uganda</span></li></ul>
+            <div class="hero-art" role="img" aria-label="Illustration of a school under a bright sky; this is artwork, not a photograph of Ayivu School">
+              <div class="art-sun"></div><div class="art-cloud cloud-one"></div><div class="art-cloud cloud-two"></div>
+              <svg class="school-art" viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M0 248c105-37 178 16 283-9s203-28 357 8v53H0z" fill="#a7e3c2"/><path d="M125 142h390v112H125z" fill="#fff"/><path d="m94 148 224-113 225 113H94z" fill="#f97316"/><path d="m138 143 180-88 182 88H138z" fill="#fb923c"/><path d="M174 163h65v58h-65zM275 163h65v58h-65zM376 163h65v58h-65z" fill="#bae6fd" stroke="#0284c7" stroke-width="7"/><path d="M291 194h58v60h-58z" fill="#075985"/><path d="M318 195v59" stroke="#e0f2fe" stroke-width="4"/><path d="M90 254h460" stroke="#075985" stroke-width="8" stroke-linecap="round"/><path d="M73 253c0-25 16-43 35-43s35 18 35 43M503 253c0-25 16-43 35-43s35 18 35 43" fill="#38bdf8"/><path d="M108 208v47m430-47v47" stroke="#075985" stroke-width="5"/><path d="M303 115h30" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+              </svg>
+              <span class="art-label">A brighter, safer school day</span>
             </div>
-
-            <ul class="mini-stats" aria-label="Fundraising summary">
-              <li><strong>$0</strong><span>raised</span></li>
-              <li><strong>$10,000</strong><span>goal</span></li>
-              <li><strong>2</strong><span>school blocks</span></li>
-            </ul>
           </div>
 
-          <div class="hero-card" id="donate">
-            <div class="card-header">
-              <span>Fundraising progress</span>
-              <strong>$0 raised of $10,000</strong>
-            </div>
-            <div class="progress" aria-label="Progress bar">
-              <div class="progress-bar" style="width: 0%"></div>
-            </div>
-
+          <aside class="hero-card" id="donate" aria-labelledby="donate-heading">
+            <div class="card-kicker">Your support makes it possible</div>
+            <h2 id="donate-heading">Give today</h2>
+            <div class="card-header"><span>Campaign progress</span><strong>$0 <span class="muted">raised of $10,000</span></strong></div>
+            <div class="progress" role="progressbar" aria-label="Fundraising progress" aria-valuemin="0" aria-valuemax="10000" aria-valuenow="0"><div class="progress-bar" style="width: 0%"></div></div>
             <div class="school-goals">
-              <div class="goal-row">
-                <div>
-                  <h3>Ayivu Primary School</h3>
-                  <p>$0 of $5,000</p>
-                </div>
-                <span class="badge">0%</span>
-              </div>
-              <div class="goal-row">
-                <div>
-                  <h3>Ayivu Secondary School</h3>
-                  <p>$0 of $5,000</p>
-                </div>
-                <span class="badge">0%</span>
-              </div>
+              <div class="goal-row"><div><h3>Ayivu Primary School</h3><p>$0 raised <span>of $5,000</span></p></div><span class="badge">$5,000 goal</span></div>
+              <div class="goal-row"><div><h3>Ayivu Secondary School</h3><p>$0 raised <span>of $5,000</span></p></div><span class="badge">$5,000 goal</span></div>
             </div>
-
-            <div class="currency-toggle" aria-label="Currency selector">
-              <button class="currency active" data-currency="USD" type="button">USD</button>
-              <button class="currency" data-currency="UGX" type="button">UGX</button>
-            </div>
-
+            <div class="currency-toggle" aria-label="Choose display currency"><button class="currency active" data-currency="USD" type="button" aria-pressed="true">USD</button><button class="currency" data-currency="UGX" type="button" aria-pressed="false">UGX</button></div>
+            <p class="rate-note">UGX amounts are estimates for display. Confirm the amount with GECOD before sending.</p>
+            <p class="field-label">Choose an amount</p>
             <div class="amount-grid" aria-label="Suggested donation amounts">
-              <button class="amount" type="button" data-amount="10">$10</button>
-              <button class="amount" type="button" data-amount="25">$25</button>
-              <button class="amount" type="button" data-amount="50">$50</button>
-              <button class="amount" type="button" data-amount="100">$100</button>
-              <button class="amount" type="button" data-amount="250">$250</button>
-              <button class="amount" type="button" data-amount="500">$500</button>
+              <button class="amount" type="button" data-amount="10">$10</button><button class="amount" type="button" data-amount="25">$25</button><button class="amount" type="button" data-amount="50">$50</button><button class="amount" type="button" data-amount="100">$100</button><button class="amount" type="button" data-amount="250">$250</button><button class="amount" type="button" data-amount="500">$500</button>
             </div>
-
-            <label class="field" for="custom-amount">
-              <span>Or enter your own amount</span>
-              <input id="custom-amount" type="number" min="1" placeholder="Amount" />
-            </label>
-
-            <label class="field" for="donor-name">
-              <span>Your name</span>
-              <input id="donor-name" type="text" placeholder="Name, or “Anonymous”" />
-            </label>
-
-            <div class="payment-methods">
-              <p>How will you pay?</p>
-              <div class="method-buttons">
-                <label class="method">
-                  <input type="radio" name="payment" checked />
-                  <span>Airtel Money</span>
-                </label>
-                <label class="method">
-                  <input type="radio" name="payment" />
-                  <span>Bank transfer</span>
-                </label>
-              </div>
+            <label class="field" for="custom-amount"><span>Or enter your own amount</span><input id="custom-amount" type="number" min="1" step="any" inputmode="decimal" placeholder="Amount" /></label>
+            <label class="field" for="donor-name"><span>Your name (optional)</span><input id="donor-name" type="text" autocomplete="name" placeholder="Name, or leave blank for Anonymous" /></label>
+            <fieldset class="payment-methods"><legend>How would you like to pay?</legend><div class="method-buttons"><label class="method"><input type="radio" name="payment" value="Airtel Money" checked /><span>Airtel Money</span></label><label class="method"><input type="radio" name="payment" value="Bank transfer" /><span>Bank transfer</span></label></div></fieldset>
+            <div class="payment-details" id="payment-details" aria-live="polite">
+              <h3>Airtel Money</h3><p><strong>Number:</strong> <a href="tel:+256755121204">0755 121204</a></p><p><strong>Registered name:</strong> Hakim James, Executive Director, Girls’ Empowerment For Community Development</p>
             </div>
-
-            <div class="payment-details">
-              <h4>Airtel Money details</h4>
-              <p><strong>Number:</strong> <a href="tel:+256755121204">0755121204</a></p>
-              <p><strong>Registered name:</strong> Hakim James, Executive Director, Girls’ Empowerment For Community Development</p>
-            </div>
-
-            <p class="note">
-              After paying, send your confirmation message on WhatsApp so we can confirm your gift.
-            </p>
-
-            <div class="cta-block">
-              <a
-                class="button button-primary full"
-                href="https://wa.me/256787967919?text=Hello%20GECOD%2C%20I%20have%20made%20a%20donation%20for%20the%20Ayivu%20girls%20toilet%20project.%20Here%20are%20the%20details%3A%20"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Pledge my gift on WhatsApp
-              </a>
-            </div>
-          </div>
+            <p class="note">This page does not process payments. Pay using the details shown, then message GECOD on WhatsApp to confirm your gift and request a receipt.</p>
+            <a class="button button-primary full pledge-link" href="https://wa.me/256787967919" target="_blank" rel="noopener noreferrer">Pledge my gift on WhatsApp</a>
+            <p class="secure-note">Your pledge opens WhatsApp. It does not send money automatically.</p>
+          </aside>
         </div>
       </section>
 
-      <section class="section" id="impact">
-        <div class="container narrow">
-          <p class="section-tag">What your gift builds</p>
-          <h2>Safe, dignified sanitation for girls</h2>
-          <div class="feature-list">
-            <div class="feature-item">
-              <span>✓</span>
-              <p>Separate, lockable stalls for girls, away from the boys’ latrines.</p>
-            </div>
-            <div class="feature-item">
-              <span>✓</span>
-              <p>A private space to change and dispose of menstrual products.</p>
-            </div>
-            <div class="feature-item">
-              <span>✓</span>
-              <p>Handwashing facilities beside each block.</p>
-            </div>
-            <div class="feature-item">
-              <span>✓</span>
-              <p>Safe access for girls with disabilities.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section class="section" id="impact"><div class="container narrow"><p class="section-tag">What your gift builds</p><h2>Privacy, dignity and safer school days</h2><p class="section-intro">Each school will receive a female-friendly latrine block designed around girls’ needs.</p><div class="feature-list">
+        <article class="feature-item"><span class="feature-icon" aria-hidden="true">01</span><div><h3>Privacy and safety</h3><p>Separate, lockable stalls for girls, away from the boys’ latrines.</p></div></article>
+        <article class="feature-item"><span class="feature-icon" aria-hidden="true">02</span><div><h3>Menstrual dignity</h3><p>A private space to change and dispose of menstrual products.</p></div></article>
+        <article class="feature-item"><span class="feature-icon" aria-hidden="true">03</span><div><h3>Handwashing</h3><p>Handwashing facilities beside each block.</p></div></article>
+        <article class="feature-item"><span class="feature-icon" aria-hidden="true">04</span><div><h3>Access for every girl</h3><p>Safe access designed to include girls with disabilities.</p></div></article>
+      </div></div></section>
 
-      <section class="section alt" id="schools">
-        <div class="container">
-          <p class="section-tag">Why Ayivu</p>
-          <h2>Schools that serve refugee and host-community girls</h2>
-          <div class="story-grid">
-            <div class="story-card">
-              <h3>Ayivu’s need</h3>
-              <p>
-                Ayivu’s schools serve refugee and host-community girls in Bidibidi Refugee
-                Settlement, Yumbe District, Uganda. When a school has no safe toilet for girls,
-                a period can mean days away from class every month.
-              </p>
-            </div>
-            <div class="story-card">
-              <h3>Long-term impact</h3>
-              <p>
-                A toilet that is clean, private and close by keeps girls learning. GECOD works
-                with schools and communities on menstrual hygiene, girls’ education and
-                protection from violence, and these two blocks put that work into permanent facilities.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section class="section alt" id="schools"><div class="container"><p class="section-tag">Why Ayivu</p><h2>Keep girls learning at Ayivu</h2><div class="story-grid"><article class="story-card"><span class="story-number">01 / THE NEED</span><h3>Safe sanitation matters</h3><p>Ayivu’s schools serve refugee and host-community girls in Bidibidi Refugee Settlement, Yumbe District, Uganda. When a school has no safe toilet for girls, a period can mean days away from class every month.</p></article><article class="story-card"><span class="story-number">02 / THE RESPONSE</span><h3>Permanent facilities, lasting impact</h3><p>A clean, private toilet close by helps girls stay in class. GECOD works with schools and communities on menstrual hygiene, girls’ education and protection from violence. These two blocks make that work part of the school environment.</p></article></div><p class="photo-note"><strong>About the artwork:</strong> The school illustration above is a visual placeholder, not a photo of Ayivu. We can replace it with a real project photo whenever one is available.</p></div></section>
 
-      <section class="section contact" id="contact">
-        <div class="container contact-grid">
-          <div>
-            <p class="section-tag">Questions or want to give another way?</p>
-            <h2>We’d love to hear from you.</h2>
-          </div>
-          <div class="contact-list">
-            <a href="https://wa.me/256787967919" target="_blank" rel="noreferrer">WhatsApp +256 787 967 919</a>
-            <a href="mailto:girlsempowerment23@gmail.com">Email girlsempowerment23@gmail.com</a>
-          </div>
-        </div>
-      </section>
+      <section class="final-cta"><div class="container final-cta-inner"><div><p class="section-tag">Together, we can make a difference</p><h2>Help girls learn with confidence.</h2><p>Share this campaign with friends, family and your workplace.</p></div><a class="button button-orange" href="#donate">Support the Ayivu project <span aria-hidden="true">→</span></a></div></section>
+      <section class="section contact" id="contact"><div class="container contact-grid"><div><p class="section-tag">Questions or want to give another way?</p><h2>Talk to the GECOD team.</h2></div><div class="contact-list"><a href="https://wa.me/256787967919" target="_blank" rel="noopener noreferrer">WhatsApp +256 787 967 919 <span aria-hidden="true">↗</span></a><a href="mailto:girlsempowerment23@gmail.com">girlsempowerment23@gmail.com <span aria-hidden="true">↗</span></a></div></div></section>
     </main>
-
-    <footer class="footer">
-      <div class="container footer-inner">
-        <p>© 2026 GECOD | Girls’ Empowerment for Community Development</p>
-        <a href="https://wa.me/256787967919?text=Hello%20GECOD%2C%20I%20want%20to%20share%20your%20campaign." target="_blank" rel="noreferrer">Share this page</a>
-      </div>
-    </footer>
-
+    <footer class="footer"><div class="container footer-inner"><p>© 2026 GECOD | Girls’ Empowerment for Community Development</p><a href="https://wa.me/?text=Please%20support%20GECOD%27s%20campaign%20to%20build%20safe%20toilets%20for%20girls%20at%20Ayivu%3A%20https%3A%2F%2Fgecod23.github.io%2Fgecod-fundraiser-uganda%2F" target="_blank" rel="noopener noreferrer">Share this campaign ↗</a></div></footer>
     <script src="script.js"></script>
   </body>
 </html>
